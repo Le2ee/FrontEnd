@@ -1,0 +1,40 @@
+<div class="center">
+	<a class="btn" href="#">apple</a>
+	<a class="btn" href="#">banana</a>
+	<a class="btn" href="#">tree</a>
+  </div>
+  
+  <style>
+  body{
+	
+	background-color: #a5ceed;
+  }
+  .center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #2b526a;
+  }
+  .btn {
+	width: 150px;
+	  display: block;
+	  text-transform: capitalize;
+	  text-decoration: thick;
+	  text-align: right;
+	  color: black;
+	  background-color: white;
+	  padding: 15px 20px;
+	  font-size: 25px;
+	  font-weight: 400;
+	  transition: all .5s;
+  }
+  .btn:not(:last-child) {
+	  margin-bottom: 30px;
+  }
+  .btn:hover {
+	  transform: scale(2.05);
+	  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 2px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  </style>
