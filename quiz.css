@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Dovemayo_wild';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Dovemayo_wild.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    font-family: 'Dovemayo_wild';
+    font-size: 26px;
+}
+
+.small-container { 
+    background-color : #E0F4FF;
+    border-radius: 20px;
+    width: fit-content;
+    /* 컨텐츠 크기에 맞춰 박스 크기 자동 조정 */
+    padding: 3px;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    right: -650px;
+    bottom: -40px; 
+}
+
+
+    .big-container { 
+        padding: 50px 10px; 
+        margin: 40px auto;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+
+
+.button {
+    background-color : #E0F4FF;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    position: fixed; /*브라우저 전체화면 기준으로 배치 */
+    bottom: 50px;
+    right: 50px
+}
+
+.food-options {
+    display: flex;
+}
+
+label {
+    margin-right: 20px;
+}
+
+.no:checked + label {
+    font-size: 22px;
+    color: black;
+}
+
+.yes:checked + label {
+    font-size : 36px;
+    color: red;
+}

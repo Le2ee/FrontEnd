@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Dovemayo_wild';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Dovemayo_wild.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    overflow: hidden;
+    font-family: 'Dovemayo_wild';
+    font-size: 26px;
+}
+
+#page {
+    width:100%;
+    height:100vh; 
+    overflow: auto;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+
+.container {
+    scroll-snap-align: center;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
+    margin-bottom: 40px;
+}
+/* display: flex;는 부모 요소를 플렉스 컨테이너로 만듭니다.
+flex-direction: column;은 아이템들을 세로로 배치합니다.
+justify-content: center;는 아이템들을 수직 중앙에 배치합니다.
+align-items: center;는 아이템들을 수평 중앙에 배치합니다.
+height: 100vh;는 화면 전체의 높이를 차지하도록 합니다.
+이렇게 함으로써 .container 클래스의 내용은 항상 수직으로 가운데 정렬되며, 화면을 스크롤할 때에도 중앙에 고정됩니다. */
+
+.container:last-child {
+    margin-bottom: 40px;
+}
+
+.selfie {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover; /* 사진 비율 그대로 유지한채 이미지 가공 */
+}
+
+a:link { color: blue; }
+a:visited { color: gray } /* 링크 방문 전 blue, 방문 후 gray */
+
+.book {
+    width: calc(33.33% - 20px);
+    height: 250px;
+    margin: 10px;
+    border-radius: 70px;
+    object-fit: cover; /* 사진 비율 그대로 유지한채 이미지 가공 */
+}
+
+#book-container{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* 이거 왜 적용안되지? */
+    align-items: center;
+}
+
+.movie-lyrics-container{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.animation {
+    width: 100%;  
+    height: 100%;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    height: 100px;
+  }
+  
+  h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .4s ease infinite alternate;
+    font-family: 'Dovemayo_wild' cursive;
+    font-size: 40px;
+    color: #f2b1de;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .4);
+  }
+  
+  h1 span:nth-child(2) { animation-delay: .1s; }
+  h1 span:nth-child(3) { animation-delay: .2s; }
+  h1 span:nth-child(4) { animation-delay: .3s; }
+  
+  @keyframes bounce {
+    100% {
+      top: -10px;
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+                   0 9px 0 #CCC,
+                   0 50px 25px rgba(0, 0, 0, .2);
+    }
+  }
+  
+.lyrics {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
+#rowbox {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
+    margin-bottom: 40px;
+}
+
+.description {
+    margin-left: 100px;
+}
+
+#end-message {
+    position: bottom;
+    width: 100%;
+    background-color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
